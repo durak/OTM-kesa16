@@ -12,7 +12,7 @@ Tunnista tietojärjestelmän käyttäjät ja mieti minkälaisia käyttötapauksi
 
 Kuvaa edellisen tehtävän käyttötapauksista __kaksi__ tarkemmalla tasolla.
 
-Käytä kuvaamiseen Alistair Cockburnin käyttötapauspohjaa, joka löytyy osoitteesta [http://www.cs.helsinki.fi/u/mluukkai/ohmas10/usecase.pdf](http://www.cs.helsinki.fi/u/mluukkai/ohmas10/usecase.pdf),  tai samaa tyyliä kun viikon 1 luentokalvon sivulla 44 olevan käyttötapauksen  __Opiskelija ilmoittautuu kurssille__  yhteydessä on käytetty.
+Käytä kuvaamiseen Alistair Cockburnin käyttötapauspohjaa, joka löytyy osoitteesta [http://www.cs.helsinki.fi/u/mluukkai/ohmas10/usecase.pdf](http://www.cs.helsinki.fi/u/mluukkai/ohmas10/usecase.pdf),  tai samaa tyyliä kun luennolla käytettiin.
 
 ## Tehtävä 3
 
