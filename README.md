@@ -16,22 +16,22 @@ Ohjelmistotekniikan menetelmät - Kesä 2016
 
 ## Laskarit
 
- * **Viikko 1**
+ * **Harjoituskerta 1**
+  * [Etukäteen tehtävät](tehtavat/ha1-et.md)
+  * [Paikanpäällä tehtävät](tehtavat/ha1-pa.md)
+ * **Harjoituskerta 2**
   * Etukäteen tehtävät
   * Paikanpäällä tehtävät
- * **Viikko 2**
+ * **Harjoituskerta 3**
   * Etukäteen tehtävät
   * Paikanpäällä tehtävät
- * **Viikko 3**
+ * **Harjoituskerta 4**
   * Etukäteen tehtävät
   * Paikanpäällä tehtävät
- * **Viikko 4**
+ * **Harjoituskerta 5**
   * Etukäteen tehtävät
   * Paikanpäällä tehtävät
- * **Viikko 5**
-  * Etukäteen tehtävät
-  * Paikanpäällä tehtävät
- * **Viikko 6**
+ * **Harjoituskerta 6**
   * Etukäteen tehtävät
   * Paikanpäällä tehtävät
 
