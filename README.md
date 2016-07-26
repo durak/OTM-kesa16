@@ -10,7 +10,7 @@ Ohjelmistotekniikan menetelmät - Kesä 2016
 6kpl aikavälillä 1.8. – 17.8. Kumpulan kampus, Exactum, Gustaf Hällströminkatu 2 b
 
 | Aika | Sali | Luennoitsija
-|-|-|-|
+|----------|------|---------------------|
 | Ma 14-16 | D122 | Olli-Pekka Mehtonen |
 | Ke 14-16 | CK112 | Olli-Pekka Mehtonen |
 
@@ -41,8 +41,8 @@ Kurssin laskarit ovat sekoitus "traditionaalista" laskaria ja pajaa. Periaatteen
 
 Jokaisella viikolla on noin 3-7 etukäteen tehtävää tehtävää sekä joitain paikanpäällä tehtäviä tehtäviä.
 
-| | Päivä | Aika | Sali | Ohjaaja |
-|-|-|-|
+|      | Päivä | Aika | Sali | Ohjaaja |
+|------|-------|------|------|---------|
 | **Ryhmä 1** | 2.8. - 18.8 | Ti ja To klo 10-13 | B222 | Olli-Pekka Mehtonen |
 | **Ryhmä 2** | 2.8. - 18.8 | Ti ja To klo 13-16 | B222 | Atte Lassila |
 
