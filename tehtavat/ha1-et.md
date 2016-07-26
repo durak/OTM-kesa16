@@ -36,4 +36,4 @@ liittyvät käyttäjät sekä esiehdot.
 
 ## Tehtävä 4
 
-Piirrä edellisen tehtävän perusteella käyttötapauskaavio.
+Piirrä edellisen tehtävän perusteella kuvatun ohjelman käyttötapauskaavio.
