@@ -1,4 +1,4 @@
-# Laskari 2 - Kotitehtävät
+# Laskari 3 - Kotitehtävät
 
 ## Tehtävä 1
 
