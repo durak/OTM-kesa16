@@ -4,7 +4,7 @@
 
 Seuraavassa on lueteltu käsitteitä, jotka ovat jossain suhteessa keskenään. Mitä suhdetyyppiä (normaali yhteys, kompositio, perintä, riippuvuus, ...) kussakin tapauksessa kannattaa käyttää (vai onko kyse jostain ihan muusta?). Piirrä esim. pieni luokkakaavio jokaisesta tilanteesta.
 
-* Ruokaileva filosofi käyttää haarukkaa
+* [Ruokaileva filosofi](https://fi.wikipedia.org/wiki/Aterioivat_filosofit) käyttää haarukkaa
 * Unixissa tiedosto on joko tavallinen tiedosto tai hakemisto
 * Monikulmion kulmat ovat järjestetty jono pisteitä
 * Opiskelija hallitsee Java-kielen
