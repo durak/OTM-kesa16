@@ -1,5 +1,4 @@
-# OTM-kesa16
-Ohjelmistotekniikan menetelmät - Kesä 2016
+# Ohjelmistotekniikan menetelmät - Kesä 2016
 
 ## :mega: Ajankohtaista
 
