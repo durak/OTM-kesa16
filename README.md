@@ -1,11 +1,11 @@
 # OTM-kesa16
 Ohjelmistotekniikan menetelmät - Kesä 2016
 
-## Ajankohtaista
+## :mega: Ajankohtaista
 
 * Tervetuloa kurssille!
 
-## Luennot
+## :notebook: Luennot
 
 6kpl aikavälillä 1.8. – 17.8. Kumpulan kampus, Exactum, Gustaf Hällströminkatu 2 b
 
@@ -14,26 +14,26 @@ Ohjelmistotekniikan menetelmät - Kesä 2016
 | Ma 14-16 | D122 | Olli-Pekka Mehtonen |
 | Ke 14-16 | CK112 | Olli-Pekka Mehtonen |
 
-## Laskarit
+## :memo: Laskarit
 
  * **Harjoituskerta 1**
   * [Etukäteen tehtävät](tehtavat/ha1-et.md)
   * [Paikanpäällä tehtävät](tehtavat/ha1-pa.md)
  * **Harjoituskerta 2**
-  * Etukäteen tehtävät
-  * Paikanpäällä tehtävät
+  * [Etukäteen tehtävät](tehtavat/ha2-et.md)
+  * [Paikanpäällä tehtävät](tehtavat/ha2-pa.md)
  * **Harjoituskerta 3**
-  * Etukäteen tehtävät
-  * Paikanpäällä tehtävät
+  * [Etukäteen tehtävät](tehtavat/ha3-et.md)
+  * [Paikanpäällä tehtävät](tehtavat/ha3-pa.md)
  * **Harjoituskerta 4**
-  * Etukäteen tehtävät
-  * Paikanpäällä tehtävät
+  * [Etukäteen tehtävät](tehtavat/ha4-et.md)
+  * [Paikanpäällä tehtävät](tehtavat/ha4-pa.md)
  * **Harjoituskerta 5**
-  * Etukäteen tehtävät
-  * Paikanpäällä tehtävät
+  * [Etukäteen tehtävät](tehtavat/ha5-et.md)
+  * [Paikanpäällä tehtävät](tehtavat/ha5-pa.md)
  * **Harjoituskerta 6**
-  * Etukäteen tehtävät
-  * Paikanpäällä tehtävät
+  * [Etukäteen tehtävät](tehtavat/ha6-et.md)
+  * [Paikanpäällä tehtävät](tehtavat/ha6-pa.md)
 
 *Mallivastaukset ovat suuntaa antavia!*
 
@@ -48,7 +48,7 @@ Jokaisella viikolla on noin 3-7 etukäteen tehtävää tehtävää sekä joitain
 
 Ota yhteyttä sähköpostilla osoitteeseen: etunimi.sukunimi ÄT cs.helsinki.fi
 
-## Arvosteluperusteet
+## :chart_with_upwards_trend: Arvosteluperusteet
 
 Kurssin kokonaispistemäärä on 36. Pisteistä 22 tulee kokeesta ja 14 laskareista. Läpipääsyyn vaaditaan 18 pistettä, vähintään puolet kokeen pistemäärästä ja vähintään puolet laskareista jaossa olevista pisteistä. Arvosanan 5 saa 32:lla pisteellä.
 
@@ -63,7 +63,7 @@ Etukäteen tehtävistä tehtävistä kertyy kurssipisteitä seuraavasti:
 * 23% tehtävistä 2p
 * 10% tehtävistä 1p
 
-## Kirjallisuus ja materiaali
+## :ledger: Kirjallisuus ja materiaali
 
 * [Luentomoniste](http://www.cs.helsinki.fi/u/mluukkai/otm2012/otm.pdf) (luvut 1-6)
 * [Luentokalvot](/luennot.pdf?raw=true)
@@ -83,7 +83,7 @@ Verkosta löytyy paljon vaihtelevatasoista UML-materiaalia, mm:
 
 Jos löydät hyvää materiaalia verkosta, kerro niin lisätään linkki tänne!
 
-## Kurssikoe
+## :trophy: Kurssikoe
 
 Opintomaksuun sisältyy opinto-ohjelmassa mainitut tenttipäivät.
 
@@ -91,7 +91,7 @@ Opintomaksuun sisältyy opinto-ohjelmassa mainitut tenttipäivät.
 * Ma 19.9.2016 klo 17-20
 * Ke 19.10.2016 klo 17-20
 
-## Työkaluja
+## :wrench: Työkaluja
 
 Ehkä suositeltavimpia kaavionpiirtotyökaluja ovat verkossa toimivat:
 * [http://yuml.me/](http://yuml.me/) luokka- ja käyttötapauskaavioihin
