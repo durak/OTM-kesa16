@@ -1,253 +1,73 @@
-# Laskari 6 - Paikanpäällä tehtävät
-
-## Osa 1: AssertJ testejä graafiseen laskimeen
+# Laskari 6 - Kotitehtävät
 
-Ohjelmoiniin jatkokurssin viidennellä viikon tehtävässä 165 ohjelmoitiin Swing-käyttöliittymän omaava [laskin](http://www.cs.helsinki.fi/group/java/s15-materiaali/viikko12/#165laskin).
+## Tehtävä 1
 
-![](https://www.cs.helsinki.fi/group/java/k13/ohja/img-ohja/laskin.png)
+Asiakaspalaverin aikana järjestelmää tilaava asiakas kertoi seuraavaa:
 
-Hae [täältä](/koodi/GraafinenLaskin.zip?raw=true) zip-pakattu graafisen laskimen sisältämä NetBeans-projekti. Pura paketti ja avaa projekti NetBeansilla.
+Yrityksellämme on joukko ruokien ja tuotteiden asetteluun erikoistuneita työntekijöitä, joiden toimenkuvana on kerätä ideoita ja kuvia ketjumme kahviloiden ja kauppojen asetteluista.  Tällä hetkellä käytämme sähköpostia digikameralla otettujen kuvien siirtämiseen, mutta haluaisimme jotain nykyaikaisempaa.
 
-Lisätään nyt projektiin testit, jotka testaavat laskimen toimintaa käyttäjän tapaan graafisen käyttöliittymän kautta.
+Tavoitteenamme on saada teiltä järjestelmä, johon työntekijämme voivat lisätä työpäivien aikana kerättyjä kuvia.  Varustamme työntekijämme iPhone 6s -älypuhelimilla. Järjestelmän tulee tukea kännykälle asennetusta applikaatiosta lähetettyjen kuvien vastaanottamista.
 
-Testaus tapahtuu [AssertJ](http://joel-costigliola.github.io/assertj/assertj-swing.html)-kirjaston avulla. Projektissa on valmiina pari testiä sisältävä testiluokka:
+Jokaisella työntekijällä on käyttäjätunnus järjestelmään, jota käytetään myös tietona lähetetyissä kuvissa. Kuvia katsottaessa pitää siis näkyä kenen lähettämä kuva on.
 
-```java
-// importteja
+Järjestelmän pitää tarjota mahdollisuus kuvien listaamiseen eri kategorioihin, esimerkiksi sesonkeihin perustuen. Sesonkikategoriaan kuuluvat muunmuassa joulukuvat, pääsiäiskuvat jne.  Jokainen kuva voi olla yhdessä tai useammassa kategoriassa. Kuvia pitää myös pystyä hakemaan kategorioiden perusteella.
 
-public class LaskinTest extends AssertJSwingJUnitTestCase {
-    FrameFixture window;
+Käyttäjät voivat myös kommentoida toisten lisäämiä kuvia, sekä antaa niille suosituksia __like__-tyylisesti.  Normaalien työntekijöiden lisäksi järjestelmää käyttävät myös ns. managerit, jotka eivät itse lähetä kuvia järjestelmään, mutta voivat kommentoida niitä.  Managereiden pitää myös pystyä luomaan raportteja lähetetyistä kuvista. Kerran viikossa sihteerit siirtävät viikon aikana valmistuneet raportit järjestelmästä erilliseen toiminnanohjausjärjestelmäämme.
 
-    @Test
-    public void tulosAlussaNolla() {
-        window.textBox("tulos").requireText("0");    
-    }    
+*Tee ylläolevasta ohjelmakuvauksesta käyttötapausmalli*. Eli etsi käyttäjät (kertaa viikon 1 kalvoilta mikä on käyttötapauksen käyttäjä eli englanniksi actor), listaa käyttötapaukaukset (tarkkaa kuvausta ei tarvita, nimi, käyttäjät sekä esiehdot riittävät) ja piirrä käyttötapausdiagrammi.
 
-    @Test
-    public void luvunLisaysNolaanToimii() {
-        window.textBox("syote").enterText("10");
-        window.button("+").click();
-        window.textBox("tulos").requireText("10");    
-    }     
+## Tehtävä 2
 
-    // lisää testejä tänne
+Tee ylläolevasta kuvauksesta määrittelyvaiheen luokkakaavio, joka tarkentaa kuvienhallintajärjestelmän käsitteistön ja käsitteiden suhteet.
 
-    @Override
-    protected void onSetUp() {
-        // sovellus on Main.java-luokassa
-        application(Main.class).start();
+HUOM: *älä lisää toiminnallisuutta määrittelyvaiheen luokkakaavioon*, älä mieti kuka tekee ja mitä, keskity luokkien olioiden pysyväluontoisiin yhteyksiin.
 
-        window = findFrame(new GenericTypeMatcher<Frame>(Frame.class) {
-            protected boolean isMatching(Frame frame) {
-                return frame.isShowing();
-            }
-        }).using(robot());        
-    }   
-}
+## Tehtävä 3
 
-```
+Ohjelmoinnin jatkokurssin kolmannen viikon tehtävä [Numerotiedustelu](http://www.cs.helsinki.fi/group/java/s15-materiaali/viikko10/#151numerotiedustelu) on tullut tutuksi tämänkin kurssin laskareista. Numerotiedustelulla on 7 eri toimintoa, joita käyttäjä käyttää "komentotulkin" tapaan. Perinteinen tapa toteuttaa komentotulkki on tehdä iso valintarakenne, jossa on oma if-haara (tai switch case) jokaista komentoa kohti. Rakenne on hieman ikävä ja laajennettavuudeltaan huono, sillä uuden komennon lisääminen edellyttää muutosten tekemistä useampaan kohtaan valintarakenteen koodia.
 
-Testiluokka poikkeaa hieman normaaleista JUnit-testeistä, sillä testiluokka perii luokan <code>AssertJSwingJUnitTestCase</code>. Avainasemassa testeissä on muuttuja <code>FrameFixture window</code> jolle metodi
-<code>protected void onSetUp()</code> asettaa arvon. Muuttujan window avulla testit pääsevät käsiksi graafisen käyttöliittymän komponentteihin.
+Vaihtoehtoinen "olio-orientoitunut" tapa tehdä komentotulkki on tehdä jokaisesta erillisestä komennosta abstraktin luokan <code>Komento</code> aliluokkia.
 
-Jotta testit löytäisivät helposti käyttöliittymän komponentit, on niille annettu ohjelman koodissa _setName_-metodin avulla nimet:
+Hae olio-orientoituneen komentotulkin sisältävä koodi [NumerotiedusteluVko7.zip](/koodi/NumerotiedusteluVko7.zip?raw=true) osoitteesta
+[https://github.com/Ooppa/OTM-4-2016/tree/master/koodi/](https://github.com/Ooppa/OTM-4-2016/tree/master/koodi/)
 
-```java
-    private void luoKomponentit(Container container) {
-        // ...         
-        tuloskentta.setName("tulos");
-        syotekentta.setName("syote");
-        plus.setName("+");
-        miinus.setName("-");
-        nollaa.setName("Z");
-        // ...
-}
-```
+Kokeile ohjelmaa ja selvitä itsellesi sen toimintaperiaate. Ohjelman rakennetta ja toimintaperiaatetta ei välttämättä ole aluksi ihan helppo ymmärtää.
 
-Testeistä ensimmäinen etsii käyttöliittymästä tekstikentän, jolle on annettu nimi _tulos_ ja varmistaa, että siinä on arvo 0:
+**Kuvaa ohjelman rakenne pakkauskaaviona.** Tässä tehtävässä ei ole tarvetta kuvata pakkauskaavion tasolla pakkausten sisällä olevia luokkia.
 
-```java
-    @Test
-    public void tulosAlussaNolla() {
-        window.textBox("tulos").requireText("0");    
-    }   
-```
+## Tehtävä 4
 
-Toisin kuin normaaleissa JUnit-testeissä, testin oikeaa tulosta ei varmisteta _assert_-muotoisella komennolla, vaan liittämällä window-muuttujasta 'etsittyyn' tekstikenttän sisällölle vaatimus _requireText_-metodilla.
+Kuvaa edellisen tehtävän ohjelman rakenne luokkakaaviona.
 
-Toinen esimerkkitesti hakee ensin käyttöliittymästä tekstikentän nimeltään _syote_, kirjoittaa tekstikenttään merkkijonon _10_, etsii painikkeen, jonka nimenä _+_ ja painaa sitä ja lopulta varmistaa, että tekstikenttä _tulos_ saa arvon 10.
+Huom: oliolla olevan HashMap:in voi ajatella luokkakaavion suhteen olevan samanlainen kuin ArrayList, eli sitä ei kannattane luokkakaavioon merkitä omana luokkanaan.
 
-```java
-    @Test
-    public void luvunLisaysNolaanToimii() {
-        window.textBox("syote").enterText("10");
-        window.button("+").click();
-        window.textBox("tulos").requireText("10");    
-    }
-```
+Kaikkia Komennon periviä luokkia ei kaavioon kannata merkitä.
 
-Tee seuraavat testit graafiselle laskimelle:
-* luvun vähennys toimii
-* usean peräkkäisen laskutoimituksen (lisäyksiä ja vähennyksiä) kombinaatio toimii
-* jos syötekentässä on epävalidi arvo (joku muu kuin kokonaisluku) ja painetaan summausnappia
-  * syötekenttä tyhjenee
-  * tuloskentän arvo säilyy muuttumattomana (oletetaan että tuloskentässä oli joku muu arvo kuin 0)
-* nollausnappi ei ole alussa klikattavissa, eli on tilassa disabled
-* kun tulos saa jonkun nollasta poikkeavan arvon, nollausnappi klikkaaminen on mahdollista
-* nollausnappi klikkaaminen nollaa tuloskentän
-* nollausnappi ei ole klikattavissa jos kahden tai useamman laskuoperaation jälkeen tuloskentässä on 0
+## Tehtävä 5
 
-## Osa 2: Testejä Numerotiedustelulle
+Kuvaa sekvenssikaaviona mitä tapahtuu kun edellisen tehtävän pääohjelma käynnistää sovelluksen eli kutsuu metodia <code>suorita</code> ja käyttäjä antaa komentoriville seuraavat syötteet:
 
-Tarkastellaan jälleen ohjelmoinnin jatkokurssilta tuttua  [numerotiedustelua](http://www.cs.helsinki.fi/group/java/s15-materiaali/viikko10/#151numerotiedustelu).
+> <pre>
+1
+pekka
+040-1234567
+5
+pekka
+x
+</pre>
 
-Hae [täältä](/koodi/NumerotiedusteluForTests.zip?raw=true) zip-pakattu, tähän tehtävään sopiva versio numerotiedustelusta. Pura paketti ja avaa projekti NetBeansilla.
+Oliolla olevan HashMap:in voi ajatella myös sekvenssikaavion suhteen olevan samanlainen kuin ArrayList, eli sitä ei kannattane merkitä kaavioon omana oliona.
 
-Lisätään nyt projektiin testit, jotka testaavat numerotiedustelua simuloiden käyttäjää, eli tekstuaalisen käyttöliittymän kautta.
+Aloita sekvenssikaavio siis hetkestä jolloin kaikki komento-oliot on jo luotu ja pääohjelma kutsuu luokan <code>Sovellus</code> metodia <code>suorita()</code>.
 
-Projektista löytyy valmiina muutama testi:
+## Tehtävä 6
 
-```java
-public class NumerotiedusteluTest {
-    ByteArrayOutputStream tulosvirta;
+Hae koneellesi osoitteesta [https://github.com/Ooppa/OTM-4-2016/tree/master/koodi/](https://github.com/Ooppa/OTM-4-2016/tree/master/koodi/) löytyvä tiedosto [Sateliittiseuranta.zip](/koodi/Sateliittiseuranta.zip?raw=true) ja pura se koneellesi. Zip-pakkauksesta löytyy NetBeans-projekti, joka sisältää [lintujen sateliittiseurannan](https://www.luomus.fi/fi/satelliittiseurannat) hallinnointiin tarkoitetun sovelluksen.
 
-    @Before
-    public void setUp() {
-        tulosvirta = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(tulosvirta));
-    }
+Tutustu sovelluksen toimintaan.
 
-    @Test
-    public void menuTulostuu() {
-	String syote = muodosta("x");
+Huomaat että koodi ei ole ihan priimaa.
 
-	Numerotiedustelu tiedustelu = new Numerotiedustelu(new Scanner(syote));
-        tiedustelu.kaynnista();
+Listaa koodista kaikki oliosuunnittelun periaatteita rikkovat kohdat ja koodihajut.
 
-        String tulos = tulosvirta.toString();
-
-        assertTrue(tulos.contains("1 lisää numero"));
-        assertTrue(tulos.contains("2 hae numerot"));
-        assertTrue(tulos.contains("3 hae puhelinnumeroa vastaava henkilö"));
-    }
-
-    @Test
-    public void tuntemattomanNumeroaEiLoydy() {
-	String syote = muodosta("2","arto","x");
-
-	Numerotiedustelu tiedustelu = new Numerotiedustelu(new Scanner(syote));
-        tiedustelu.kaynnista();
-
-        String tulos = tulosvirta.toString();
-
-        assertTrue(tulos.contains("ei löytynyt"));
-    }        
-
-    private String muodosta(String... lines) {
-        String linesWithEnter = "";
-        for (String line : lines) {
-            linesWithEnter += line + "\n";
-        }
-        return linesWithEnter;
-    }
-}
-
-```
-
-Testeissä ohjelman toimivuus varmistetaan tutkimalla että ohjelman tulostusvirtaan, eli konsoliin tekemät tulostukset ovat odotetun kaltaisia. Testien aluksi alustetaan tulostusvirtaolio ja _ohjataan_ metodilla <code>System.setOut</code> ohjelman tulostus tapahtumaan konsolin sijaan testin määrittelemään tulostusvirtaolioon.
-
-```java
-    ByteArrayOutputStream tulosvirta;
-
-    @Before
-    public void setUp() {
-        tulosvirta = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(tulosvirta));
-    }
-```
-
-Testien aluksi määritellään _merkkijonona_ simuloitu käyttäjän antama syöte. Jokainen erillinen käyttäjän antama syöterivi päättyy rivinvaihtoon eli merkkiin _\n_. Tämän jälkeen käynnistetään sovellus. Sovellukselle annetaan konstruktorin parametrina <code>Scanner</code>-olio, joka saa parametrikseen simuloitua syötettä vastaavan merkkijonon. Merkkijono muodostetaan apumetodin <code>muodosta</code> avulla.
-
-```java
-    String syote =  muodosta("2","arto","x");
-
-    Numerotiedustelu tiedustelu = new Numerotiedustelu(new Scanner(syote));
-    tiedustelu.kaynnista();
-```
-
-Apumetodi lisää rivinvaihdon jokaisen parametrinsa väliin, eli merkkijonon <code>syote</code> arvoksi edellisessä tulee <code>2\narto\nx\n</code>.
-
-Nyt Numerotiedustelu-sovelluksen näkökulmasta scanner toimii siten, kuin käyttäjä antaisi ensin syötteeksi _2_, sen jälkeen _arto_ ja lopulta _x_.
-
-Testin lopussa muutetaan _tulosvirta_ merkkijonoksi ja varmistetaan, että ohjelman tulostus on odotetun kaltainen:
-
-```java
-    String tulos = tulosvirta.toString();
-
-    assertTrue(tulos.contains("ei löytynyt"));     
-```
-
-Käytännössä ohjelman tulostus on yksi iso merkkijono, ja odotettuja tulosrivejä voidaan etsiä ohjelman tuloksen seasta esim. _contains_-operaatiolla.
-
-<code>assertTrue()</code>-muotoisten komentojen antama virheilmoitus ei ole kovin informatiivinen. Voimme onneksi antaa komennolle myös kaksi parametria, joista ensimmäiseksi tulee customoitu virheilmoitus. Jos muuttaisimme edellisen testin seuraavaan muotoon:
-
-```java
-    @Test
-    public void tuntemattomanNumeroaEiLoydy() {
-	String syote = muodosta("2","arto","x");
-
-	Numerotiedustelu tiedustelu = new Numerotiedustelu(new Scanner(syote));
-        tiedustelu.kaynnista();
-
-        String tulos = tulosvirta.toString();
-
-        assertTrue("ohjelman tulostus oli: "+tulos, tulos.contains("ei ole"));
-    }   
-```
-
-saisimme virheilmoituksen, joka sisältää tiedon siitä mitä ohjelma tulosti testin suorituksen aikana, ja näin debuggaus olisi hieman helpompaa:
-
-![](https://www.evernote.com/shard/s417/sh/c28eed29-5ac5-4f11-9592-f83cc15d8def/ff03adc8cbc3b0e5b47ded8d52c14c85/deep/0/NumerotiedusteluForTests---NetBeans-IDE-8.0.png)
-
-Eli virhe oli siinä, että testi oletti ohjelman tulostavan _ei ole_, mutta ohjelma tulosti _ei löytynyt_
-
-Tee nyt Numerotiedustelulle seuraavat tekstuaalisen käyttöliittymän kautta suoritettavat testit:
-* jos henkilölle lisätään numero, löydetään numero hakuoperaatiolla
-* jos henkilölle on lisätty useita numeroita, löydetään numerot hakuoperaatiolla
-* numeroa vastaava henkilö löydetään
-* jos numeroa vastaavaa henkilöä ei ole, ohjelma tulostaa _ei löytynyt_
-* jos puhelinnumeron omaavalle henkilölle lisätään osoite, tulostuvat molemmat henkilön tiedoissa
-* jos henkilöllä on numero mutta ei ole osoitetta, tulostuu henkilön tietoihin _osoite ei tiedossa_
-* jos henkilöllä on osoite, mutta ei numeroa, tulostuu henkilön tietoihin _ei puhelinta_
-* jos henkilö poistetaan, ei mitään henkilöön liittyvää löydetä _missään_ haussa
-
-**HUOM1:** kaikkien syötteiden tulee päättyä ohjelman lopetuskomentoon _'x'_, eli olla muotoa:
-
-```java
-    String syote = muodosta(..., "x");
-```
-
-**HUOM2:** kaikkien testien muoto on sama. Ensin alustetaan testaussyöte, sen jälkeen luodaan ja käynnistetään numerotiedostelu, lopuksi tutkitaan, että ohjelman tulostus on oikeanlainen.
-
-```java
-    @Test
-    public void kaikkiTestitNäin() {
-	String syote = muodosta(..., "x");
-
-	Numerotiedustelu tiedustelu = new Numerotiedustelu(new Scanner(syote));
-        tiedustelu.kaynnista();
-
-        String tulos = tulosvirta.toString();
-
-        // assertJotain  
-    }
-```
-
-**HUOM3:**
-Varmista tarvittaessa ohjelman eri toimintojen haluttu toiminnallisuus ja tulostusasu
-[tehtävämäärittelystä](http://www.cs.helsinki.fi/group/java/s15-materiaali/viikko10/#151numerotiedustelu).
-
-
-## Osa 3: Lisätoiminnallisuus puhelinmuistiolle
-
-Tee testi myös puhelinmuistion toiminnallisuudelle numero 7 eli _hakusanalla filtteröity listaus (nimen mukaan aakkostettuna), hakusana voi esiintyä henkilön nimessä tai osoitteessa_
+Refaktoroi koodi mahdollisimman siistiksi. Koodin toiminnallisuuden ei tule muuttua, eli pidä huoli siitä että et riko testejä!
