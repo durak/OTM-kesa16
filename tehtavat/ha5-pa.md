@@ -232,7 +232,7 @@ Jos ostoskorissasi on mukana jotain ylimääräistä, refaktoroi koodiasi niin e
 
 ## Osa 2: Lyyrakortin refaktorointi
 
-Viime viikon paikanpäällä tehdyssä tehtävässä teimme kattavat yksikkötestit Lyyrakortille ja Kassapäätteelle. Voit ottaa tämän tehtävän pohjaksi joko viimeviikkoisen koodisi tai sen [esimerkkivastauksen](Viikon-5-paikanpaalla-mallivastauksia.md)
+Viime viikon paikanpäällä tehdyssä tehtävässä teimme kattavat yksikkötestit Lyyrakortille ja Kassapäätteelle. Voit ottaa tämän tehtävän pohjaksi joko viimeviikkoisen koodisi tai sen [esimerkkivastauksen](#) EI MALLIA VIELÄ!
 
 Tehtävän yhteydessä oleva Kassapäätteen koodi sisältää paljon copypastea, sekä edullisen että maukkaan lounaan ostosta käteisellä huolehtiva koodihan on oleellisesti sama. Vastaavasti korttioston suhteen.
 
