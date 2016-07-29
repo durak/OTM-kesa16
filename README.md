@@ -51,7 +51,7 @@ Ota yhteyttä sähköpostilla osoitteeseen: etunimi.sukunimi ÄT cs.helsinki.fi
 
 Kurssin kokonaispistemäärä on 36. Pisteistä 22 tulee kokeesta ja 14 laskareista. Läpipääsyyn vaaditaan 18 pistettä, vähintään puolet kokeen pistemäärästä ja vähintään puolet laskareista jaossa olevista pisteistä. Arvosanan 5 saa 32:lla pisteellä.
 
-Laskareiden jaossa olevasta 14:sta pisteestä puolet tulee etukäteen tehtävien tehtävien ja puolet paikanpäällä tehtävien tehtävien perusteella. Etukäteen tehtävät käsitellään laskareissa. **Laskaripisteiden saaminen siis edellyttää laskareissa paikanpäällä käymistä.**
+Laskareiden jaossa olevasta 14:sta pisteestä 8 tulee etukäteen tehtävien tehtävien ja 6 paikanpäällä tehtävien tehtävien perusteella. Etukäteen tehtävät käsitellään laskareissa. **Laskaripisteiden saaminen siis edellyttää laskareissa paikanpäällä käymistä.**
 
 Etukäteen tehtävistä tehtävistä kertyy kurssipisteitä seuraavasti:
 * 90% tehtävistä 8p  
