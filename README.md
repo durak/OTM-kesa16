@@ -3,6 +3,7 @@
 ## :mega: Ajankohtaista
 
 * Tervetuloa kurssille!
+* ***Ma 1.8 (tänään), luento siirtynyt Physicumiin auditorioon E204 (toinen kerros)***
 
 ## :notebook: Luennot
 
@@ -10,9 +11,9 @@
 
 | Aika | Sali | Luennoitsija
 |----------|------|---------------------|
-| Ma 14-16 | D122 | Olli-Pekka Mehtonen |
+| Ma 14-16 | D122 | Olli-Pekka Mehtonen | 
 | Ke 14-16 | CK112 | Olli-Pekka Mehtonen |
-
+***(Huom 1.8 sali E204), ks. ajankohtaista***
 ## :memo: Laskarit
 
  * **Harjoituskerta 1**
