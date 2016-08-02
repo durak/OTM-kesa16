@@ -3,7 +3,6 @@
 ## :mega: Ajankohtaista
 
 * Tervetuloa kurssille!
-* ***Ma 1.8 (tänään), luento siirtynyt Physicumiin auditorioon E204 (toinen kerros)***
 
 ## :notebook: Luennot
 
@@ -37,7 +36,7 @@
 
 *Mallivastaukset ovat suuntaa antavia!*
 
-Kurssin laskarit ovat sekoitus "traditionaalista" laskaria ja pajaa. Periaatteena on kuitenkin se, että **osallistutaan yhteen laskaritilaisuuteen joka viikko ja ollaan paikalla laskaritilaisuuden alusta loppuun.**
+Kurssin laskarit ovat sekoitus "traditionaalista" laskaria ja pajaa. Periaatteena on kuitenkin se, että **paikalla ollaan laskaritilaisuuden alusta loppuun.**
 
 Jokaisella viikolla on noin 3-7 etukäteen tehtävää tehtävää sekä joitain paikanpäällä tehtäviä tehtäviä.
 
