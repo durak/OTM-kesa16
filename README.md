@@ -16,7 +16,7 @@
 ## :memo: Laskarit
 
  * **Harjoituskerta 1**
-  * [Etukäteen tehtävät](tehtavat/ha1-et.md) ([mallivastaukset](mallivastaukset/mallivastaukset-ha1.md))
+  * [Etukäteen tehtävät](tehtavat/ha1-et.md) ([mallivastaukset](mallivastaukset/mallivastaukset_ha1.md))
   * [Paikanpäällä tehtävät](tehtavat/ha1-pa.md) ([mallivastaukset](mallivastaukset/mallivastaukset-ha1p.pdf))
  * **Harjoituskerta 2**
   * [Etukäteen tehtävät](tehtavat/ha2-et.md)
