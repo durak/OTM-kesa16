@@ -1,6 +1,7 @@
 # Ohjelmistotekniikan menetelmät - Kesä 2016
 
 ## :mega: Ajankohtaista
+ * **Laskarit tästä eteenpäin mikroluokassa B221**
 
 * Tervetuloa kurssille!
 
@@ -12,7 +13,7 @@
 |----------|------|---------------------|
 | Ma 14-16 | D122 | Olli-Pekka Mehtonen | 
 | Ke 14-16 | CK112 | Olli-Pekka Mehtonen |
-***(Huom 1.8 sali E204), ks. ajankohtaista***
+
 ## :memo: Laskarit
 
  * **Harjoituskerta 1**
@@ -42,8 +43,8 @@ Jokaisella viikolla on noin 3-7 etukäteen tehtävää tehtävää sekä joitain
 
 |      | Päivä | Aika | Sali | Ohjaaja |
 |------|-------|------|------|---------|
-| **Ryhmä 1** | 2.8. - 18.8 | Ti ja To klo 10-13 | B222 | Olli-Pekka Mehtonen |
-| **Ryhmä 2** | 2.8. - 18.8 | Ti ja To klo 13-16 | B222 | Atte Lassila |
+| **Ryhmä 1** | 2.8. - 18.8 | Ti ja To klo 10-13 | B221 | Olli-Pekka Mehtonen |
+| **Ryhmä 2** | 2.8. - 18.8 | Ti ja To klo 13-16 | B221 | Atte Lassila |
 
 Ota yhteyttä sähköpostilla osoitteeseen: etunimi.sukunimi ÄT cs.helsinki.fi
 
