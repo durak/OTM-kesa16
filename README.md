@@ -20,8 +20,8 @@
   * [Etukäteen tehtävät](tehtavat/ha1-et.md) ([mallivastaukset](mallivastaukset/mallivastaukset_ha1.md))
   * [Paikanpäällä tehtävät](tehtavat/ha1-pa.md) ([mallivastaukset](mallivastaukset/mallivastaukset-ha1p.pdf))
  * **Harjoituskerta 2**
-  * [Etukäteen tehtävät](tehtavat/ha2-et.md)
-  * [Paikanpäällä tehtävät](tehtavat/ha2-pa.md)
+  * [Etukäteen tehtävät](tehtavat/ha2-et.md) ([mallivastaukset](mallivastaukset/mallivastaukset_ha2.md))
+  * [Paikanpäällä tehtävät](tehtavat/ha2-pa.md) ([mallivastaukset](mallivastaukset/mallivastaukset_ha2-paikalla.md))
  * **Harjoituskerta 3**
   * [Etukäteen tehtävät](tehtavat/ha3-et.md)
   * [Paikanpäällä tehtävät](tehtavat/ha3-pa.md)
