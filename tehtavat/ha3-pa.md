@@ -2,7 +2,7 @@
 
 **Jakaantukaa 3-5 hengen ryhmiin**
 
-Tehkää kohdealueen eli määrittelyvaiheen luokkamalli viime harjoituskerran verkkokaupasta. Verkkokaupan kuvaus [täällä](ha2-pa.md)
+Tehkää kohdealueen eli määrittelyvaiheen luokkamalli ensimmäisen harjoituskerran verkkokaupasta. Verkkokaupan kuvaus [täällä](ha1-pa.md)
 
 Etsikää luokkakandidaatit luennolla (viikon 3 kalvot 14-36) esitettyä käsiteanalyysiä käyttäen, eli kerätkää tehtäväkuvauksessa esiintyvät substantiivit. Karsikaa sen jälkeen ylimääräiset kandidaatit, eli attribuutit, synonyymit ja muut asiaan kuulumattomat (esim. toimintaa tai käyttöliittymäelementtejä kuvaavat nimet). Miettikää tämän jälkeen luokkien yhteydet ja yhteyksien laadut.
 
